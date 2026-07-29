@@ -1,0 +1,11 @@
+[project]
+name = "docscrub"
+version = "0.1.0"
+description = "A lightweight Python library to clean raw text and documents"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "ftfy>=6.3.1",
+    "pytest>=9.1.1",
+    "ruff>=0.16.0",
+]

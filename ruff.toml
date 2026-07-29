@@ -1,0 +1,6 @@
+line-length = 88
+
+exclude = [
+    ".venv",
+    "__pycache__"
+]
