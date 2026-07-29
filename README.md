@@ -1,5 +1,10 @@
 # DocScrub
 
+[![Python](https://img.shields.io/badge/Python-3.14+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![pytest](https://img.shields.io/badge/pytest-9.1.1-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)](https://docs.pytest.org/)
+[![Ruff](https://img.shields.io/badge/Ruff-0.16.0-D7FF64?style=for-the-badge&logo=ruff&logoColor=111111)](https://docs.astral.sh/ruff/)
+[![ftfy](https://img.shields.io/badge/ftfy-text%20fixing-444444?style=for-the-badge)](https://ftfy.readthedocs.io/)
+
 DocScrub is a lightweight Python library for cleaning raw text before NLP, LLM, and RAG workflows.
 
 ## Features
