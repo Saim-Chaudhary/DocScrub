@@ -1,6 +1,5 @@
 from docscrub import Cleaner
 
-
 text = """
     Welcome to Website
 
