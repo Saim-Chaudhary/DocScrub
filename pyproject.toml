@@ -2,6 +2,9 @@
 name = "docscrub"
 version = "0.1.0"
 description = "A lightweight Python library to clean raw text and documents"
+authors = [
+    {name = "Saim Chaudhary"}
+]
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
