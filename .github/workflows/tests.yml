@@ -16,6 +16,7 @@ jobs:
     runs-on: ubuntu-latest
 
     strategy:
+      fail-fast: false
       matrix:
         python-version:
           - "3.10"
@@ -40,11 +41,11 @@ jobs:
 
 
       - name: Install dependencies
-        run: uv sync --python ${{ matrix.python-version }}
+        run: uv sync --python ${{ matrix.python-version }} --locked
 
 
       - name: Install DocScrub package
-        run: uv pip install -e .
+        run: uv pip install -e . --python ${{ matrix.python-version }}
 
 
       - name: Run tests
