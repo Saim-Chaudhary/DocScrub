@@ -2,14 +2,16 @@ import re
 
 
 def remove_extra_whitespace(text: str) -> str:
-    """
-    Remove unnecessary spaces and new lines.
-    """
+    """Remove extra spaces, tabs, and blank lines."""
 
-    # replace multiple spaces
-    text = re.sub(r"[ \t]+", " ", text)
+    cleaned_lines = []
+    for raw_line in text.splitlines():
+        line = raw_line.replace("\t", " ")
+        line = re.sub(r" +", " ", line).strip()
 
-    # replace multiple new lines
-    text = re.sub(r"\n+", "\n", text)
+        if line == "":
+            continue
 
-    return text.strip()
+        cleaned_lines.append(line)
+
+    return "\n".join(cleaned_lines).strip()
